@@ -1,0 +1,52 @@
+
+.contener{
+    margin-top: 2%;
+    margin-left: 1%;
+    padding: 2%;
+    border: 1px;
+}
+.info{
+    font-size:55px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.text{
+color:lavender;
+font-weight:300;
+font-size:20px;
+font-family:Courier New,monospace;
+}
+
+.bg{
+background-color:grey;
+}
+
+.right{
+ background-size:100% 170%;
+}

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<font class="text">
+<div class="navbar">
+  <a href="/">About</a>
+  <a href="home.html">Home</a>
+  <a class="bg" href="chatbot.html">Chatbot</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+</font>
+<br><br>
+<div>
+  <section class="main">
+            <div class="chatbot-area">
+                <img src="../static/images/user.png">
+            </div>
+            <div class="chatarea-main">
+                <div class="chatarea-outer">
+                    <!--<div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div>
+                    <div class="chatarea-inner chatbot">Hello hi, how area you, i am good. What about you!</div>
+                    <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div> -->
+                </div>
+            </div>
+
+            <div class="user-area">
+                <img src="../static/images/chatbot.png">
+            </div>
+        <button id="mic"><i class="flaticon-microphone"></i></button>
+    </section>
+
+</div>
+
+<script type="javascript">
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+
+    <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='main.js') }}"
+    ></script>
+</body>
+</html>
